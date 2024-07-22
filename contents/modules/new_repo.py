@@ -12,13 +12,11 @@ class NewRepo:
         Downloads = os.path.expanduser("~/Downloads")
         print(f"Thư mục gốc: {self.root_folder}")
 
-
-
         CreateFile(f"{self.root_folder}/README.md")
 
         CreateFile(f"{self.root_folder}/.gitignore")
 
-        code_workspace =   "../nghia-github-template.code-workspace"
+        code_workspace = "../nghia-github-template.code-workspace"
         with open(code_workspace, "r", encoding="utf-8") as file:
             contents = file.read()
         CreateFile(f"{self.root_folder}/{os.path.basename(self.root_folder)}.code-workspace", contents)
