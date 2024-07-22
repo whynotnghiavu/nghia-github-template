@@ -23,7 +23,9 @@ class NewRepo:
 
         CreateFolder(f"{self.root_folder}/contents")
         CreateFolder(f"{self.root_folder}/contents/code")
-        CreateFolder(f"{self.root_folder}/contents/code/modules")
+        CreateFolder(f"{self.root_folder}/contents/modules")
+        CreateFolder(f"{self.root_folder}/contents/input")
+        CreateFolder(f"{self.root_folder}/contents/output")
         CreateFolder(f"{self.root_folder}/contents/documents")
         CreateFolder(f"{self.root_folder}/contents/video")
 
