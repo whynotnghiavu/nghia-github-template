@@ -9,7 +9,6 @@ class NewRepo:
 
     def start(self):
         contents = ""
-        Downloads = os.path.expanduser("~/Downloads")
         print(f"Thư mục gốc: {self.root_folder}")
 
         CreateFile(f"{self.root_folder}/README.md")
@@ -29,9 +28,9 @@ class NewRepo:
         CreateFolder(f"{self.root_folder}/contents/documents")
         CreateFolder(f"{self.root_folder}/contents/video")
 
-        CreateFile(f"{self.root_folder}/contents/{os.path.basename(self.root_folder)}.py")
-
         all_gitignore = "../all.gitignore"
         with open(all_gitignore, "r", encoding="utf-8") as file:
             contents = file.read()
         CreateFile(f"{self.root_folder}/contents/.gitignore", contents)
+
+        CreateFile(f"{self.root_folder}/contents/{os.path.basename(self.root_folder)}.py")
