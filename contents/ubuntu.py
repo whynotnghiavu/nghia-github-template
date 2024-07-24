@@ -4,6 +4,7 @@ import tkinter as tk
 from tkinter import filedialog
 from modules.new_repo import NewRepo
 
+
 def on_button_click(event=None):
     try:
         Downloads_Nghia_Git = os.path.expanduser("~/Downloads/Nghia/Git")
@@ -18,6 +19,7 @@ def on_button_click(event=None):
             exit()
     except Exception as e:
         print(f"Error: {e}")
+
 
 # Tự động hỏi thư mục
 on_button_click()
