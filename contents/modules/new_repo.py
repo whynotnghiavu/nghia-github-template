@@ -26,6 +26,7 @@ class NewRepo:
         CreateFolder(f"{self.root_folder}/contents/input")
         CreateFolder(f"{self.root_folder}/contents/output")
         CreateFolder(f"{self.root_folder}/contents/documents")
+        CreateFolder(f"{self.root_folder}/contents/data")
         CreateFolder(f"{self.root_folder}/contents/video")
 
         all_gitignore = "../all.gitignore"
