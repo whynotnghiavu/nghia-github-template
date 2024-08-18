@@ -21,16 +21,17 @@ class NewRepo:
         CreateFile(f"{self.root_folder}/{os.path.basename(self.root_folder)}.code-workspace", contents)
 
         CreateFolder(f"{self.root_folder}/contents")
-        CreateFolder(f"{self.root_folder}/contents/code")
-        CreateFolder(f"{self.root_folder}/contents/modules")
-        CreateFolder(f"{self.root_folder}/contents/input")
-        CreateFolder(f"{self.root_folder}/contents/output")
-        CreateFolder(f"{self.root_folder}/contents/documents")
-        CreateFolder(f"{self.root_folder}/contents/data")
-        CreateFolder(f"{self.root_folder}/contents/video")
-        CreateFolder(f"{self.root_folder}/contents/python")
         CreateFolder(f"{self.root_folder}/contents/others")   
-        CreateFolder(f"{self.root_folder}/contents/pictures")
+
+        CreateFolder(f"{self.root_folder}/contents/others/code")
+        CreateFolder(f"{self.root_folder}/contents/others/modules")
+        CreateFolder(f"{self.root_folder}/contents/others/input")
+        CreateFolder(f"{self.root_folder}/contents/others/output")
+        CreateFolder(f"{self.root_folder}/contents/others/documents")
+        CreateFolder(f"{self.root_folder}/contents/others/data")
+        CreateFolder(f"{self.root_folder}/contents/others/video")
+        CreateFolder(f"{self.root_folder}/contents/others/python")
+        CreateFolder(f"{self.root_folder}/contents/others/pictures")
 
         all_gitignore = "../all.gitignore"
         with open(all_gitignore, "r", encoding="utf-8") as file:
