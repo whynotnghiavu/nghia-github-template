@@ -28,6 +28,9 @@ class NewRepo:
         CreateFolder(f"{self.root_folder}/contents/documents")
         CreateFolder(f"{self.root_folder}/contents/data")
         CreateFolder(f"{self.root_folder}/contents/video")
+        CreateFolder(f"{self.root_folder}/contents/python")
+        CreateFolder(f"{self.root_folder}/contents/others")   
+        CreateFolder(f"{self.root_folder}/contents/pictures")
 
         all_gitignore = "../all.gitignore"
         with open(all_gitignore, "r", encoding="utf-8") as file:
