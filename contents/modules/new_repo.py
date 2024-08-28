@@ -21,7 +21,7 @@ class NewRepo:
         CreateFile(f"{self.root_folder}/{os.path.basename(self.root_folder)}.code-workspace", contents)
 
         CreateFolder(f"{self.root_folder}/contents")
-        CreateFolder(f"{self.root_folder}/contents/others")   
+        CreateFolder(f"{self.root_folder}/contents/others")
 
         CreateFolder(f"{self.root_folder}/contents/others/code")
         CreateFolder(f"{self.root_folder}/contents/others/modules")
@@ -32,6 +32,7 @@ class NewRepo:
         CreateFolder(f"{self.root_folder}/contents/others/video")
         CreateFolder(f"{self.root_folder}/contents/others/python")
         CreateFolder(f"{self.root_folder}/contents/others/pictures")
+        CreateFolder(f"{self.root_folder}/contents/others/tools")
 
         all_gitignore = "../all.gitignore"
         with open(all_gitignore, "r", encoding="utf-8") as file:
