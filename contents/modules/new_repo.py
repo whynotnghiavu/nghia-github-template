@@ -1,4 +1,9 @@
 import os
+import subprocess
+
+
+
+
 from modules.create_file import CreateFile
 from modules.create_folder import CreateFolder
 
@@ -28,6 +33,7 @@ class NewRepo:
         CreateFolder(f"{self.root_folder}/contents/others/input")
         CreateFolder(f"{self.root_folder}/contents/others/output")
         CreateFolder(f"{self.root_folder}/contents/others/documents")
+        CreateFolder(f"{self.root_folder}/contents/others/docs")
         CreateFolder(f"{self.root_folder}/contents/others/data")
         CreateFolder(f"{self.root_folder}/contents/others/video")
         CreateFolder(f"{self.root_folder}/contents/others/python")
@@ -40,3 +46,8 @@ class NewRepo:
         CreateFile(f"{self.root_folder}/contents/.gitignore", contents)
 
         CreateFile(f"{self.root_folder}/contents/{os.path.basename(self.root_folder)}.py")
+
+
+
+        os.chdir(self.root_folder)
+        subprocess.run(['git', 'add', '.'])
