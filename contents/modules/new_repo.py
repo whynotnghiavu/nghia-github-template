@@ -2,8 +2,6 @@ import os
 import subprocess
 
 
-
-
 from modules.create_file import CreateFile
 from modules.create_folder import CreateFolder
 
@@ -47,7 +45,6 @@ class NewRepo:
 
         CreateFile(f"{self.root_folder}/contents/{os.path.basename(self.root_folder)}.py")
 
-
-
+        # Git
         os.chdir(self.root_folder)
         subprocess.run(['git', 'add', '.'])
